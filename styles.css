@@ -86,3 +86,16 @@ footer {
     background: rgba(0, 0, 0, 0.8);
     margin-top: 40px;
 }
+cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
