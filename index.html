@@ -1,69 +1,71 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platinum</title>
+    <title>Platinum Gamers</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function updateCounter() {
-            let count = Math.floor(Math.random() * 500) + 100;
-            document.getElementById("buyerCount").innerText = count;
-        }
-        setInterval(updateCounter, 5000);
-    </script>
 </head>
 <body>
     <header>
         <h1>Platinum Gamers</h1>
-        <p>La elección superior para tus compras.</p>
+        <p>La elección superior para los gamers</p>
         <a href="#ofertas" class="cta-button">Ver Ofertas</a>
     </header>
-
-    <section class="content">
-        <aside class="colores">
-            <h2>Colores y su Significado</h2>
-            <ul>
-                <li><span class="color-box" style="background-color: red;"></span> Rojo - Pasión y energía</li>
-                <li><span class="color-box" style="background-color: blue;"></span> Azul - Confianza y tranquilidad</li>
-                <li><span class="color-box" style="background-color: green;"></span> Verde - Armonía y frescura</li>
-                <li><span class="color-box" style="background-color: yellow;"></span> Amarillo - Optimismo y felicidad</li>
-                <li><span class="color-box" style="background-color: black;"></span> Negro - Elegancia y poder</li>
-                <li><span class="color-box" style="background-color: white;"></span> Blanco - Pureza y simplicidad</li>
-            </ul>
-        </aside>
-
+    
+    <div class="content">
+        <section class="colores">
+            <h2>Colores y su significado</h2>
+            <p><span class="color-box" style="background:red;"></span>Rojo - Pasión y energía</p>
+            <p><span class="color-box" style="background:blue;"></span>Azul - Confianza y tranquilidad</p>
+            <p><span class="color-box" style="background:green;"></span>Verde - Frescura y crecimiento</p>
+            <p><span class="color-box" style="background:yellow;"></span>Amarillo - Alegría y optimismo</p>
+        </section>
+        
         <section id="ofertas">
-            <h2>Ofertas Exclusivas</h2>
+            <h2>Los videojuegos más vendidos</h2>
             <div class="grid">
                 <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/71LZ1fzEJcL._AC_SL1500_.jpg" alt="Lámpara LED Inteligente">
-                    <h3>Lámpara LED Inteligente</h3>
-                    <p>Cambia de color y controla la luz con tu móvil.</p>
-                    <a href="https://www.amazon.es/dp/B09XYZ12345" class="cta-button" target="_blank">Más info</a>
+                    <img src="game1.jpg" alt="Juego 1">
+                    <h3>Juego Épico</h3>
+                    <p>Uno de los juegos más populares en el mundo.</p>
+                    <a href="https://www.amazon.com/game1" target="_blank">Más info</a>
                 </div>
                 <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/61j6A69XGcL._AC_SL1500_.jpg" alt="Xiaomi Smart Band 9">
-                    <h3>Xiaomi Smart Band 9</h3>
-                    <p>Monitoriza tu actividad diaria con esta pulsera inteligente.</p>
-                    <a href="https://www.amazon.es/dp/B09AB67890" class="cta-button" target="_blank">Más info</a>
-                </div>
-                <div class="card">
-                    <img src="https://ae01.alicdn.com/kf/S9d1c95fbd8184c60bff3e9a71fd7d27fL.jpg" alt="Esponja Mágica de Limpieza">
-                    <h3>Esponja Mágica de Limpieza</h3>
-                    <p>Limpia cualquier superficie con facilidad usando esta esponja multiusos.</p>
-                    <a href="https://www.aliexpress.com/item/1005009876543210.html" class="cta-button" target="_blank">Más info</a>
+                    <img src="game2.jpg" alt="Juego 2">
+                    <h3>Aventura Extrema</h3>
+                    <p>Explora mundos increíbles con este título.</p>
+                    <a href="https://www.amazon.com/game2" target="_blank">Más info</a>
                 </div>
             </div>
         </section>
+    </div>
+    
+    <section class="equipos-streamers">
+        <h2>Equipos de Streamers Famosos</h2>
+        <div class="equipo">
+            <h3>Teclado</h3>
+            <p>Utilizado por los mejores jugadores profesionales.</p>
+            <p class="nombre">Logitech G Pro</p>
+        </div>
+        <div class="equipo">
+            <h3>Silla Gamer</h3>
+            <p>Comodidad y estilo para largas sesiones de juego.</p>
+            <p class="nombre">Secretlab Titan Evo</p>
+        </div>
+        <div class="equipo">
+            <h3>Monitor</h3>
+            <p>Velocidad y calidad para eSports.</p>
+            <p class="nombre">ASUS ROG Swift</p>
+        </div>
     </section>
-
+    
     <footer>
-        <p>&copy; 2025 Platinum | Todos los derechos reservados.</p>
+        <p>&copy; 2025 Platinum Gamers - Todos los derechos reservados</p>
     </footer>
 </body>
-</html>      
+</html>
 
-                
-     
+
+    
+ 
