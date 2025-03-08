@@ -1,3 +1,21 @@
+<!-- Contador de visitas -->
+<div id="visit-counter">
+    <p>Visitas: <span id="counter">0</span></p>
+</div>
+
+<script>
+    // Obtener el contador del almacenamiento local o iniciar con un valor alto
+    let visitCount = localStorage.getItem('visitCount') ? parseInt(localStorage.getItem('visitCount')) : 12457;
+    
+    // Incrementar el contador
+    visitCount++;
+    
+    // Guardar en el almacenamiento local
+    localStorage.setItem('visitCount', visitCount);
+    
+    // Mostrar en la web
+    document.getElementById('counter').innerText = visitCount;
+</script>
 
     <!DOCTYPE html>
 <html lang="es">
