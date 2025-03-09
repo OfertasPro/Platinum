@@ -1,23 +1,4 @@
-<!-- Contador de visitas -->
-<div id="visit-counter">
-    <p>Visitas: <span id="counter">0</span></p>
-</div>
-
-<script>
-    // Obtener el contador del almacenamiento local o iniciar con un valor alto
-    let visitCount = localStorage.getItem('visitCount') ? parseInt(localStorage.getItem('visitCount')) : 12457;
-    
-    // Incrementar el contador
-    visitCount++;
-    
-    // Guardar en el almacenamiento local
-    localStorage.setItem('visitCount', visitCount);
-    
-    // Mostrar en la web
-    document.getElementById('counter').innerText = visitCount;
-</script>
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -44,19 +25,19 @@
             </ul>
         </aside>
         
-        <!-- Centro - Juegos Favoritos (Carrusel Vertical) -->
+        <!-- Centro - Juegos Favoritos (Diapositivas Verticales) -->
         <main class="featured-games">
             <h2>Juegos Favoritos</h2>
-            <div class="carousel vertical">
+            <div class="carousel">
                 <div class="slide">
                     <img src="https://m.media-amazon.com/images/I/81KkrQWEHIL._AC_UY218_.jpg" alt="Elden Ring">
                     <h3>Elden Ring</h3>
                     <a href="https://www.amazon.com/dp/B0BMQF9ZRQ" target="_blank" class="play-button">Play Now</a>
                 </div>
                 <div class="slide">
-                    <img src="https://m.media-amazon.com/images/I/81vVbiD3Z6L._AC_UY218_.jpg" alt="Call of Duty MW3">
-                    <h3>Call of Duty MW3</h3>
-                    <a href="https://www.amazon.com/dp/B0BVR1FHZ5" target="_blank" class="play-button">Play Now</a>
+                    <img src="https://m.media-amazon.com/images/I/81vVbiD3Z6L._AC_UY218_.jpg" alt="God of War Ragnarok">
+                    <h3>God of War Ragnarok</h3>
+                    <a href="https://www.amazon.com/dp/B09HSRD5R5" target="_blank" class="play-button">Play Now</a>
                 </div>
                 <div class="slide">
                     <img src="https://m.media-amazon.com/images/I/81V7LJ2gNWL._AC_UY218_.jpg" alt="The Witcher 3">
@@ -90,10 +71,23 @@
         </aside>
     </div>
     
+    <!-- Contador de visitas -->
+    <div id="visit-counter">
+        <p>Visitas: <span id="counter">0</span></p>
+    </div>
+    
+    <script>
+        let visitCount = localStorage.getItem('visitCount') ? parseInt(localStorage.getItem('visitCount')) : 12457;
+        visitCount++;
+        localStorage.setItem('visitCount', visitCount);
+        document.getElementById('counter').innerText = visitCount;
+    </script>
+    
     <footer>
         <p>&copy; 2025 Platinum Gaming - Todos los derechos reservados</p>
     </footer>
 </body>
-</html>  
-     
-     
+</html>
+
+
+ 
